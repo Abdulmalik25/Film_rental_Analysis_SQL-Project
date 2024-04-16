@@ -24,13 +24,13 @@ Today, unfortunately, this helper is not available. So your friend has called yo
 | ● first_name                             | ● film_id                           |
 | ● last_name                              |                                     |
 |                                          |                                     |
-|               Language                   |            Film_category            |
 |------------------------------------------|-------------------------------------|
+|               Language                   |            Film_category            |
 | ● language_id                            | ● film_id                           |
 | ● name                                   | ● category_id                       |
 |                                          |                                     |
-|                   Film                   |                 Staff               |
 |------------------------------------------|-------------------------------------|
+|                   Film                   |                 Staff               |
 | ● film_id                                | ● staff_id                          |
 | ● title                                  | ● first_name                        |
 | ● description                            | ● last_name                         |
@@ -41,13 +41,13 @@ Today, unfortunately, this helper is not available. So your friend has called yo
 | ● replacement_cost                       |                                     |
 | ● rating                                 |                                     |
 |                                          |                                     |
-|                Category                  |               Country               |
 |------------------------------------------|-------------------------------------|
+|                Category                  |               Country               |
 | ● category_id                            | ● country_id                        |
 | ● name                                   | ● country                           |
 |                                          |                                     |
-|                Customer                  |               Address               |
 |------------------------------------------|-------------------------------------|
+|                Customer                  |               Address               |
 | ● customer_id                            | ● address_id                        |
 | ● store_id                               | ● district                          |
 | ● first_name                             | ● city_id                           |
@@ -55,14 +55,14 @@ Today, unfortunately, this helper is not available. So your friend has called yo
 | ● email                                  | ● phone                             |
 | ● address_id                             | ● location                          |
 |                                          |                                     |
-|                  City                    |                Store                |
 |------------------------------------------|-------------------------------------|
+|                  City                    |                Store                |
 | ● city_id                                | ● store_id                          |
 | ● city                                   | ● manager_staff_id                  |
 | ● country_id                             | ● address_id                        |
 |                                          |                                     |
-|                  Rental                  |               Payment               |
 |------------------------------------------|-------------------------------------|
+|                  Rental                  |               Payment               |
 | ● rental_id                              | ● payment_id                        |
 | ● rental_date                            | ● customer_id                       |
 | ● inventory_id                           | ● staff_id                          |
