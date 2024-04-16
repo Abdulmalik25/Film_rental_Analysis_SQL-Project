@@ -257,3 +257,6 @@ join CustomerPayments cp using(customer_id)
 where rank1 = 1 and (total_amount_next_date>=0.5*total_payment)
 order by customer_name;
 ```
+
+# Conclusion
+With well-organized tables and SQL queries, this project helps manage film rental store data for better business decisions. By structuring data and providing insightful reports, it aims to streamline operations and ensure continued success.
