@@ -10,25 +10,66 @@ Today, unfortunately, this helper is not available. So your friend has called yo
 
 # Data Model
 ## Overview of Tables.
-### Actor Info
-| Actor       | Film_Actor |
-|-------------|------------|
-| (actor data)| (film-actor data)|
+| **Info**          | **Associated Tables**            |
+|-------------------|----------------------------------|
+| Actor Info        | Actor, Film_Actor                |
+| Film Info         | Film, Film_Category, Category, Language |
+| Customer Info     | Customer, Address, City, Country |
+| Store Info        | Store, Staff, Rental, Payment    |
 
-### Film Info
-| Film        | Film_Category | Category | Language |
-|-------------|---------------|----------|----------|
-| (film data) | (film-category data) | (category data) | (language data) |
+## Tables Structure
+|                   Actor                  |               Film_Actor             |
+|------------------------------------------|-------------------------------------|
+| ● actor_id                               | ● actor_id                          |
+| ● first_name                             | ● film_id                           |
+| ● last_name                              |                                     |
+|                                          |                                     |
+|               Language                   |            Film_category            |
+|------------------------------------------|-------------------------------------|
+| ● language_id                            | ● film_id                           |
+| ● name                                   | ● category_id                       |
+|                                          |                                     |
+|                   Film                   |                 Staff               |
+|------------------------------------------|-------------------------------------|
+| ● film_id                                | ● staff_id                          |
+| ● title                                  | ● first_name                        |
+| ● description                            | ● last_name                         |
+| ● language_id                            | ● address_id                        |
+| ● rental_duration                        | ● email                             |
+| ● rental_rate                            | ● store_id                          |
+| ● length                                 |                                     |
+| ● replacement_cost                       |                                     |
+| ● rating                                 |                                     |
+|                                          |                                     |
+|                Category                  |               Country               |
+|------------------------------------------|-------------------------------------|
+| ● category_id                            | ● country_id                        |
+| ● name                                   | ● country                           |
+|                                          |                                     |
+|                Customer                  |               Address               |
+|------------------------------------------|-------------------------------------|
+| ● customer_id                            | ● address_id                        |
+| ● store_id                               | ● district                          |
+| ● first_name                             | ● city_id                           |
+| ● last_name                              | ● postal_code                       |
+| ● email                                  | ● phone                             |
+| ● address_id                             | ● location                          |
+|                                          |                                     |
+|                  City                    |                Store                |
+|------------------------------------------|-------------------------------------|
+| ● city_id                                | ● store_id                          |
+| ● city                                   | ● manager_staff_id                  |
+| ● country_id                             | ● address_id                        |
+|                                          |                                     |
+|                  Rental                  |               Payment               |
+|------------------------------------------|-------------------------------------|
+| ● rental_id                              | ● payment_id                        |
+| ● rental_date                            | ● customer_id                       |
+| ● inventory_id                           | ● staff_id                          |
+| ● customer_id                            | ● rental_id                         |
+| ● return_date                            | ● amount                            |
+| ● staff_id                               | ● payment_date                      |
 
-### Customer Info
-| Customer    | Address | City | Country |
-|-------------|---------|------|---------|
-| (customer data) | (address data) | (city data) | (country data) |
-
-### Store Info
-| Store       | Staff | Rental | Payment |
-|-------------|-------|--------|---------|
-| (store data) | (staff data) | (rental data) | (payment data) |
 
 ## ER- Diagram
 ![2024-04-16-23-50-05](https://github.com/Abdulmalik25/Film_rental_Analysis_SQL-Project/assets/153974173/eb05ec54-786e-4f08-8e2f-ef8833ab093a)
