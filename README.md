@@ -1,6 +1,9 @@
 # Film_rental_Analysis_SQL-Project
 Ready to save the day for my friend's film rental store? Dive into the world of DVD rentals and SQL queries with me as we make crucial business decisions together! Let's leverage our expertise to shape the future of this business and drive success! Time to step up and make a difference!
 
+# Tech Stack used
+<img src="https://github.com/Abdulmalik25/Travego_Travelers_Sql--Project/assets/153974173/fe50efa7-c836-4213-b20f-0b89ad397eb9" alt="images" width="450" height="350">
+
 # Introduction
 There is a film rental store that provides DVDs on a rental basis. The owner of this store is your friend and he is not at all computer savvy. To manage his business he has software that helps him to manage the business.
 
